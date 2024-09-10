@@ -1,0 +1,141 @@
+header {
+  position: relative;
+
+  nav {
+    position: fixed;
+    width: 100%;
+    padding: 25px 0;
+    z-index: 9999;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+
+      .socials {
+        display: flex;
+        gap: 20px;
+        font-size: 22px;
+
+        i {
+          color: var(--gray-color);
+          transition: all 0.2s ease-in-out;
+        }
+
+        i:hover {
+          color: var(--blue-color);
+        }
+      }
+
+      .mobile_links {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        gap: 40px;
+
+        li {
+          a {
+            color: var(--gray-color);
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+          }
+
+          a:hover {
+            color: var(--blue-color);
+          }
+        }
+      }
+    }
+  }
+
+  nav.scrolling {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px 0px rgb(197, 197, 197);
+    background-color: #fff;
+  }
+
+  section.hero {
+    padding-top: 300px;
+    margin-bottom: 120px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .personal-photo-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 2px solid var(--blue-color);
+        box-shadow: 0px 0px 10px 0px rgba(121, 121, 235, 1);
+        margin-bottom: 50px;
+        background-color: #fff;
+
+        img {
+          width: 90px;
+        }
+      }
+
+      h6 {
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--gray-color);
+        margin-bottom: 4dvh;
+      }
+
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1000px;
+        margin-bottom: 80px;
+
+        h1 {
+          font-size: 50px;
+          font-weight: bold;
+          margin-bottom: 40px;
+          color: var(--dark-gray-color);
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+          max-width: 600px;
+          color: var(--gray-color);
+          font-weight: 500;
+        }
+      }
+
+      button {
+        border: 2px solid var(--blue-color) !important;
+        background-color: var(--blue-color);
+        border: none;
+        padding: 15px 35px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      button:hover {
+        background-color: transparent;
+        border: 2px solid var(--blue-color);
+
+        a {
+          color: var(--blue-color);
+        }
+      }
+    }
+  }
+}
