@@ -106,3 +106,15 @@ header:before {
     }
   }
 }
+
+@media screen and (max-width: 994px) {
+  section.contact-me {
+    form {
+      display: flex;
+      justify-content: center;
+      .input-cont2 {
+        min-width: 385px !important;
+      }
+    }
+  }
+}

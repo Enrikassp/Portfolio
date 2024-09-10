@@ -367,6 +367,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         max-width: 800px;
+        padding: 0 50px !important;
         gap: 30px;
 
         .input-cont {
@@ -392,7 +393,7 @@ main {
 
           i {
             position: absolute;
-            top: 43px;
+            top: 45px;
             left: 10px;
             color: var(--dark-gray-color);
           }
@@ -402,7 +403,7 @@ main {
           position: relative;
           display: flex;
           flex-direction: column;
-          width: 795px;
+          min-width: 795px;
 
           label {
             font-size: 15px;
@@ -430,6 +431,7 @@ main {
           width: 100%;
 
           input {
+            position: relative;
             padding: 15px 50px;
             outline: none;
             border: none;
@@ -446,15 +448,6 @@ main {
           input:hover {
             background-color: transparent;
             color: var(--blue-color);
-          }
-          input:hover,
-          i {
-            color: var(--blue-color) !important;
-          }
-          i {
-            position: absolute;
-            left: 445px;
-            color: #fff;
           }
         }
       }
